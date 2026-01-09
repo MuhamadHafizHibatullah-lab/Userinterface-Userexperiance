@@ -1,0 +1,139 @@
+body {
+    background-color: gold;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    margin: 0;
+}
+.nav-container {
+    background-color: rgb(42, 44, 44);
+    padding: 15px;
+    box-shadow: 0 4px 6px rgba(232, 97, 19, 0.5);
+
+}
+.nav-list {
+    list-style: none;
+    justify-content: center;
+    display: flex;
+    padding: 0;
+    margin: 0;
+}
+.nav-list li {
+    margin: 0px 15px;
+}
+.nav-list a {
+    text-decoration: none;
+    color: whitesmoke;
+    font-size: large;
+    border-radius: 4px;
+    transition: background-color 0.3s ease, color 0.3s ease;
+}
+.nav-list a:hover {
+    background-color: rgb(255, 162, 0);
+    border-radius: 10px;
+}
+.img-container {
+    display: flex;
+}
+.text-info {
+    margin-left: 35px;
+}
+.img-container aside {
+    margin-left: 30%;
+    background-color: goldenrod;
+    margin-top: 20px;
+    border-radius: 10px;
+}
+.img-container aside li {
+    list-style: none;
+    justify-content: center;
+    margin-right: 20px;
+}
+.img-container aside a {
+    text-decoration: none;
+}
+.img {
+    width: 250px;
+    margin-left: 20%;
+    margin-top: 20px;
+}
+.article {
+    margin-top: 20px;
+    text-align: center;
+}
+.gallery-container img {
+    width: 250px;
+    margin-top: 10px;
+}
+.content-container {
+    display: flex;
+}
+.vidau {
+    margin-left: 35px;
+}
+.vidau audio {
+    margin-left: 50px;
+}/* ========== STYLING ATTACHMENTS ========== */
+
+/* 1. Kotak utama yang membungkus semuanya */
+.attachments-container {
+  border: 2px solid white; /* Border seperti di mockup */
+  border-radius: 8px;
+  padding: 15px;
+  margin: 30px 10%; /* Memberi jarak atas/bawah dan kiri/kanan */
+  background-color: #2a2c2c; /* Sedikit beda dari background body */
+}
+
+.attachments-container h3 {
+  margin-top: 0;
+  color: whitesmoke;
+  border-bottom: 1px solid #555; /* Garis bawah judul */
+  padding-bottom: 10px;
+}
+
+/* 2. Kontainer untuk flex (agar grid & list berdampingan) */
+.attachments-content {
+  flex-wrap: wrap; /* Izinkan turun ke bawah di HP */
+  gap: 20px; /* Jarak antara galeri dan list */
+}
+
+/* 3. SISI KIRI: Styling Galeri Grid 2x2 */
+.image-grid {
+  display: grid;
+  /* Membuat 2 kolom */
+  grid-template-columns: repeat(2, 1fr);
+  gap: 10px; /* Jarak antar gambar */
+
+  /* Grid mengambil 60% lebar */
+  flex-basis: 60%;
+  min-width: 250px; /* Lebar minimum sebelum 'wrap' */
+}
+
+.image-grid img {
+  width: 100%; /* Wajib agar gambar responsif */
+  height: 150px; /* Atur tinggi gambar (sesuaikan) */
+  object-fit: cover; /* Mencegah gambar gepeng */
+  border: 1px solid #444;
+  border-radius: 4px;
+}
+
+/* 4. SISI KANAN: Styling Daftar Link */
+.links-list {
+  /* List mengambil sisa lebarnya */
+  flex: 1;
+  min-width: 200px; /* Lebar minimum */
+  margin: 0;
+  padding-left: 20px;
+}
+
+.links-list li {
+  margin-bottom: 10px;
+}
+
+.links-list a {
+  color: gold; /* Warna biru langit */
+  text-decoration: none;
+}
+
+.links-list a:hover {
+  text-decoration: underline;
+  color: gold; /* Warna pink muda saat hover */
+}
