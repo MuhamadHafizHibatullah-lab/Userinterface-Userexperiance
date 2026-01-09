@@ -1,0 +1,43 @@
+*{
+    margin: 0;
+}
+body{
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    font-family: Arial, Helvetica, sans-serif;
+}
+header{
+    background-color: paleturquoise;
+    height: 100px;
+    line-height: 100px;
+}
+main{
+    display: flex;
+    height: 500px;
+    line-height: 500px;
+}
+article{
+    flex: 3;
+    order: 1;
+}aside{
+    flex: 1;
+    order: 2;
+    background-color: mistyrose;
+}
+nav{
+    flex: 1;
+    order: 3;
+    background-color: plum;
+}
+footer{
+    background-color: aliceblue;
+    height: 150px;
+    line-height: 150px;
+}
+/* tetap (absolute)
+- px - cm - pt - pc - mm -in/inc
+2. relatif terhadap elemen
+- % - em - rem
+3. relatif terhadap layar
+- vh - vw - vmin - vmax */

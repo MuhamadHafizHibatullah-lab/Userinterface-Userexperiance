@@ -1,0 +1,59 @@
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
+body {
+    display: flex;
+    min-height: 100vh; 
+    text-align: center; 
+}
+
+
+nav {
+    flex: 1; 
+    background-color: pink;
+    padding-top: 20px; 
+}
+
+
+.konten-utama {
+    flex: 3; 
+    display: flex;
+    flex-direction: column; 
+}
+
+
+header {
+    height: 100px; 
+    background-color: khaki;
+    line-height: 100px; 
+}
+
+footer {
+    height: 60px; 
+    background-color: khaki;
+    line-height: 60px; 
+}
+
+
+.tengah {
+    flex: 1; 
+    display: flex;
+}
+
+
+article {
+    flex: 3; /* Lebar 3 bagian */
+    background-color: #fff; 
+    padding-top: 20px; 
+}
+
+aside {
+    flex: 1; /* Lebar 1 bagian */
+    background-color: cyan;
+    padding-top: 20px; 
+}
