@@ -1,0 +1,38 @@
+body {
+    background-color: gray;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+.header {
+    background-color: black;
+    padding: 0;
+    margin: auto;
+    text-align: center;
+}
+.header h1 {
+    color: gold;
+}
+.paraghp {
+    border: 1px dotted black;
+    background-color: gold;
+    display: inline-block;
+}
+.content-container {
+    text-align: center;
+}
+.content-container img {
+    width: 25%;
+    margin: auto;
+    aspect-ratio: 4/3;
+    object-fit: cover;
+ }
+.artikel::first-letter {
+  font-size: 5em;        /* Membuat ukuran 5x lipat (sesuaikan) */
+  color: black;           /* Warna huruf (sesuai gambar) */
+  font-weight: bold;     /* Membuatnya tebal */
+  
+  float: left;           /* Ini adalah KUNCINYA */
+  
+  padding-right: 8px;    /* Jarak antara 'B' dengan sisa teks */
+  line-height: 0.8;      /* Mengatur spasi baris agar rapi (sesuaikan) */
+  margin: auto;
+} 
